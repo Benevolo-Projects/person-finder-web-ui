@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Animated Login Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+	</head>
+<body>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Upload</span>
+        </div>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile01">
+          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+        </div>
+      </div>
+    <img src="images/illustration.svg" alt="" class="wave">
+
+    <div class="login-container">
+        <form action="index.html">
+            <img class="avatar" src="images/aavatar.svg" alt="">
+            <h2>Person Finder</h2>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div>
+                    <h5>Username</h5>
+                    <input type="text" class="input" id="username" required>
+                </div>
+            </div>
+            <div class="input-div two">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div>
+                    <h5>Password</h5>
+                    <input type="password" class="input" id="password" required>
+                </div>
+            </div>
+            <a href="#">Forget Password?</a>
+            <button type="button" class="btn" value="Login" onclick="logIn()">Login</button>
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
